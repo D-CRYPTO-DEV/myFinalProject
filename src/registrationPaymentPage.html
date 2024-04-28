@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+   <div >
+    <div class="flex gap-x-20 h-dvh p-5 ">
+        <!-- instruction section -->
+            <div  class="bg-blue-900 w-2/5 p-10 rounded-lg text-white ">
+                <h1 class="text-5xl">Instructions</h1>
+                <div class="">
+                    <p class="text-slate-200 w-96 mb-8 text-sm">
+                        Please make sure to review your details before proceeding to make payments.
+                    </p>
+                    <p class="text-sm">
+                        If you have issues with payments, please call 08117523300 or send an email to tech@illumino.africa.
+                    </p>
+                </div>
+            </div>
+            <!-- the form part -->
+            <div class=" text-center w-2/5 ">
+                <h6>
+                    Welcome to the
+                </h6>
+                <h1 class="text-4xl text-center">
+                    Registration Portal
+                </h1>
+                <h6 class="mt-2">
+                    Please input your details below
+                </h6>
+ 
+                <div class=" text-center flex justify-center gap-x-28 mt-3 mb-3">
+                    <div class="opacity-60">
+                        Student Information
+                    </div>
+                    <div>
+                        Payments
+                        <hr class="border-y-0 border-t-0 border-b-2 border-black border w-32">
+                    </div>
+                </div>
+
+                <p class="mt-7 font-medium text-lg">
+                    Your total payment is &#8358; <span class="font-bold">5,000:00</span>
+                </p>
+                <p class="text-sm">
+                    please input your payment details below
+                </p>
+                <form action="" method="post" class="whitespace-nowrap">
+                    <input type="text" name="studentName" id="studentName" placeholder="Name of candidate" class="border-2 w-4/5 h-10 rounded-md mt-5 mb-3"> <br>
+                   <input type="text" name="cardNum" id="cardNum" class="border-2 w-4/5 h-10 rounded-md mb-0" placeholder="Enter Card PAN"> 
+                   <img class="relative bottom-10 mt-2 ms-5 left-3/4 mb-0" src="img/logos_mastercard.svg" alt="">
+                   <input type="text" name="" id="" class="border-2  h-10 rounded-md me-2" placeholder="Expiry Date">
+                   <label for="">
+                    <input type="number" name="" id="" class="border-2  h-10 rounded-md mb-3" placeholder="CVV"> <br>
+                    <span class="text-xs relative bottom-4 start-20">3 digits at behind your card</span> <br>
+                   </label>
+                   <button type="submit" class="bg-blue-600 w-4/5 h-10 rounded-md text-sm text-slate-100">PAY & REGISTER</button>
+                  <div class="flex justify-center align-middle">
+                    <p class="me-3">
+                        your payment is secure by 
+                   </p>
+                   <img class="h-14 w-32 relative bottom-3 " src="img/Group 36.svg" alt="">
+                  </div>
+                  <img src="img/date.svg" class="absolute bottom-44 right-96 me-14">
+                  <img src="img/padlock.svg" alt=""  class="absolute bottom-44 right-60">
+                </form>
+            </div>
+       </div>
+   </div>   
+</body>
+</html>
