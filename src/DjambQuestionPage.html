@@ -9,7 +9,7 @@
 <body>
     <nav class="bg-blue-800  ">
         <ul class="mx-20 py-4  text-white flex justify-between">
-           <li>
+           <li id="subject">
                 Mathematics
            </li>
            <li>
@@ -20,29 +20,31 @@
     <div class="h-4 bg-orange-400">
     </div>
     <main>
-        <div class="flex m-auto justify-between w-9/12 my-10">
-            <p class=" text-2xl ">Questions <span>1</span></p>
-            <p class="text-2xl ">timer</p>
+        <div class="flex m-auto justify-between h-5 w-9/12 my-10">
+            <p class=" text-2xl ">Questions <span id="QNUM">1</span></p>
+            <p class="text-2xl relative bottom-9 left-10 bg-black h-20 w-20 text-balance text-center text-white pt-5 rounded-full " id="timer">0</p>
         </div>
-        <p class="w-9/12 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper pulvinar a est morbi. Consequat, feugiat pharetra, morbi aliquam. Morbi non sit tempus arcu, risus, mauris fusce. Enim, donec sed mattis nam vulputate elementum, diam at.</p>
+        <p class="w-9/12 m-auto" id="qbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper pulvinar a est morbi. Consequat, feugiat pharetra, morbi aliquam. Morbi non sit tempus arcu, risus, mauris fusce. Enim, donec sed mattis nam vulputate elementum, diam at.</p>
             <form action="" method="post" class="text-center ">
-                <button class=" m-auto text-start my-2 h-10 border-2 hover:bg-orange-400 rounded-2xl w-9/12">
+                <button class=" m-auto text-start my-2 h-10 border-2 hover:bg-orange-400 rounded-2xl w-9/12" id="QA">
                     A.Lorem
                 </button> <br>
 
-                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12" >
+                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12" id="QB" >
                     B.Lorem
                 </button> <br>
 
-                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12">
+                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12" id="QC">
                     C.Lorem
                 </button> <br>
 
-                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12 mb-10">
+                <button  class="text-start my-2 h-10 border-2  hover:bg-orange-400  rounded-2xl w-9/12 mb-10" id="QD">
                     D.Lorem
                 </button> <br>
-                <button class="bg-blue-800  px-8 rounded-md py-2 relative left-96 ms-14  hover:bg-blue-200 text-white" type="submit  ">Next</button>
+                <button class="bg-blue-800  px-8 rounded-md py-2 relative left-96 ms-14  hover:bg-blue-200 text-white" type="button" id="Nextbtn">Next</button>
             </form>
     </main>
+
+    <script type="module" src="mainjavascript.js"></script>
 </body>
 </html>
