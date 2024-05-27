@@ -169,7 +169,7 @@ const optionA = document.getElementById("QA");
 const optionB = document.getElementById("QB");
 const optionC = document.getElementById("QC");
 const optionD = document.getElementById("QD");
-let qnumber = document.getElementById("QNUM")
+let qnumber = document.getElementById("QNUM");
 let subject = document.getElementById("subject");
 var startingMinutes = 30;
 var time = startingMinutes * 60;
@@ -193,7 +193,28 @@ var selectedId = 0;
 window.addEventListener("DOMContentLoaded", change());
 nextbtn.addEventListener("click",()=>{
     var selectedId = 1;
-    change()
+    if(selectedId <= jambQuestions.length - 1){
+        change();
+    }
+    else{
+        fullPage.innerHTML =` <nav class="bg-blue-800">
+        <ul class="mx-20 py-4  text-white flex justify-between">
+           <li id="subject">
+                Djambite
+           </li>
+           <li>
+                these are the questions you are yet to answer!
+           </li>
+        </ul>
+    </nav>
+    <div class="h-4 bg-orange-400">
+    </div>
+    <main>
+        <div class="flex m-auto justify-between h-5 w-9/12 my-10">
+            <button class="rounded-3xl bg-blue-700 size-12">1</button>
+        </div>
+    </main>`
+    };
 });
 
 function change(){ 
@@ -208,6 +229,7 @@ function change(){
     subject.innerHTML = questionID.course;
     console.log(jambQuestions[1].id) // since question ids start from 1
 }
+console.log(jambQuestions.length)
 
 
 
